@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syoda Technology Pvt. Ltd. | AI · SaaS · Automation</title>
+  <meta name="description" content="Syoda Technology Pvt. Ltd. — Enterprise AI Solutions, SaaS Products & Intelligent Automation. A subsidiary of Syoda Group.">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== 3D CANVAS BACKGROUND ===== -->
+  <canvas id="canvas3d"></canvas>
+
+  <!-- ===== MOBILE NAV MENU ===== -->
+  <div class="mobile-nav-menu" id="mobileNav">
+    <button class="mobile-close-btn" onclick="closeMobile()" aria-label="Close menu">✕</button>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#ai" onclick="closeMobile()">AI Solutions</a>
+    <a href="#saas" onclick="closeMobile()">SaaS Products</a>
+    <a href="#automation" onclick="closeMobile()">Automation</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#contact" onclick="closeMobile()" class="mobile-cta">Get Started →</a>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="mainHeader">
+    <div class="container">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#home" class="logo">
+          <div img src="syoda-logo.jpg"></div>
+          <!--<div class="logo-text">
+            <span class="logo-name">Syoda Technology Pvt. Ltd.</span>
+          </div>-->
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+          <a href="#services">Services</a>
+          <a href="#ai">AI Solutions</a>
+          <a href="#saas">SaaS</a>
+          <a href="#automation">Automation</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-cta">Get Started</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger" onclick="toggleMobile()" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Powering the Next Generation of Technology
+        </div>
+        <h1>Innovate Smarter,<br>Scale <span class="gradient-text">Infinitely</span></h1>
+        <p>Syoda Technology delivers cutting-edge AI solutions, enterprise SaaS platforms, and intelligent automation tools that transform how modern businesses operate and grow.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary">Explore Solutions</a>
+          <a href="#contact" class="btn-secondary">Schedule a Demo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><h3 data-count="500" data-suffix="+">500+</h3><p>Enterprise Clients</p></div>
+          <div class="stat"><h3 data-count="98.9" data-suffix="%">98.9%</h3><p>Uptime SLA</p></div>
+          <div class="stat"><h3 data-count="40" data-suffix="+">40+</h3><p>Countries Served</p></div>
+          <div class="stat"><h3 data-count="2.4" data-suffix="B+" data-prefix="$">$2.4B+</h3><p>Client Value Generated</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">Our Services</div>
+        <h2>End-to-End Technology <span class="gradient-text">Services</span></h2>
+        <p>From strategy to execution, we deliver transformative technology solutions tailored to your business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon icon-cyan">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Harness the power of machine learning, NLP, and computer vision to automate complex processes and gain competitive intelligence from your data.</p>
+          <div class="tags">
+            <span class="tag">ML Models</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon icon-purple">☁️</div>
+          <h3>Cloud Architecture</h3>
+          <p>Design, deploy, and optimize scalable cloud infrastructure across AWS, Azure, and GCP with enterprise-grade security and compliance.</p>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Multi-Cloud</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon icon-cyan">⚡</div>
+          <h3>Process Automation</h3>
+          <p>Replace repetitive manual workflows with intelligent automation systems that reduce errors, cut costs, and accelerate delivery across your organization.</p>
+          <div class="tags">
+            <span class="tag">RPA</span>
+            <span class="tag">Workflow</span>
+            <span class="tag">Integration</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon icon-purple">📊</div>
+          <h3>Data Analytics &amp; BI</h3>
+          <p>Transform raw data into strategic insights with real-time dashboards, predictive analytics, and AI-powered business intelligence platforms.</p>
+          <div class="tags">
+            <span class="tag">Big Data</span>
+            <span class="tag">BI</span>
+            <span class="tag">Predictive</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon icon-cyan">🔐</div>
+          <h3>Cybersecurity</h3>
+          <p>Protect your digital assets with AI-driven threat detection, zero-trust security architectures, and enterprise-grade compliance management.</p>
+          <div class="tags">
+            <span class="tag">Zero Trust</span>
+            <span class="tag">SOC</span>
+            <span class="tag">Compliance</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon icon-purple">🌐</div>
+          <h3>Digital Transformation</h3>
+          <p>End-to-end digital transformation consulting and implementation — from legacy modernization to full-stack cloud-native development.</p>
+          <div class="tags">
+            <span class="tag">Strategy</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI SOLUTIONS SECTION ===== -->
+  <section id="ai" class="section-tinted">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">AI Solutions</div>
+        <h2>Enterprise <span class="gradient-text">AI</span> Suite</h2>
+        <p>Next-generation artificial intelligence solutions purpose-built for enterprise scale, security, and precision.</p>
+      </div>
+      <div class="ai-grid">
+
+        <!-- 3D Orb Visual -->
+        <div class="ai-visual fade-in">
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot orbit-dot-purple"></div></div>
+          <div class="ai-orb"></div>
+        </div>
+
+        <!-- AI Features List -->
+        <div class="ai-features fade-in">
+          <div class="ai-feature">
+            <div class="ai-feature-icon">🧠</div>
+            <div>
+              <h4>SyodaGPT — Enterprise Language AI</h4>
+              <p>Custom large language models fine-tuned on your proprietary data for intelligent document processing, customer service automation, and knowledge management — all on-premise or private cloud.</p>
+            </div>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature-icon">👁️</div>
+            <div>
+              <h4>VisionCore — Computer Vision Platform</h4>
+              <p>Real-time object detection, quality inspection, and video analytics for manufacturing, retail, and healthcare. Processes 10,000+ frames per second with 99.2% accuracy.</p>
+            </div>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature-icon">📈</div>
+            <div>
+              <h4>PredictIQ — Forecasting Engine</h4>
+              <p>Demand forecasting, risk modeling, and anomaly detection powered by ensemble ML models. Connects directly to your ERP, CRM, and data warehouses.</p>
+            </div>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature-icon">🗣️</div>
+            <div>
+              <h4>ConversAI — Multimodal Agents</h4>
+              <p>Deploy intelligent conversational agents across voice, chat, and email with contextual memory, multilingual support, and seamless human handoff capabilities.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAAS PRODUCTS SECTION ===== -->
+  <section id="saas">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">SaaS Products</div>
+        <h2>Cloud <span class="gradient-text">Software</span> Products</h2>
+        <p>Production-ready SaaS platforms that deploy in days — not months. Built for reliability, security, and scale.</p>
+      </div>
+      <div class="saas-grid">
+
+        <!-- Ops360 -->
+        <div class="saas-card fade-in">
+          <div class="saas-card-header">
+            <div class="saas-badge badge-cyan">⚙️ Operations Suite</div>
+            <h3>Syoda Ops360</h3>
+            <p>Unified operations management platform that consolidates project tracking, resource planning, incident management, and performance analytics into a single intelligent workspace.</p>
+          </div>
+          <div class="saas-card-body">
+            <ul class="saas-features">
+              <li>Real-time project and resource dashboards</li>
+              <li>AI-powered bottleneck detection and alerts</li>
+              <li>Integrates with 150+ enterprise tools</li>
+              <li>Role-based access and full audit trails</li>
+              <li>ISO 27001 &amp; SOC 2 Type II certified</li>
+            </ul>
+            <div class="saas-pricing">
+              <span class="price price-cyan">₹13,900</span>
+              <span class="period">/ user / year</span>
+            </div>
+          </div>
+          <div class="saas-card-footer">
+            <a href="#contact" class="btn-card">Start Free Trial</a>
+            <span class="trial-note">30-day free trial</span>
+          </div>
+        </div>
+
+        <!-- DataNexus -->
+        <div class="saas-card fade-in">
+          <div class="saas-card-header">
+            <div class="saas-badge badge-purple">💡 Intelligence Suite</div>
+            <h3>Syoda DataNexus</h3>
+            <p>Self-service business intelligence and data collaboration platform. Build, share, and embed live reports and predictive dashboards — no coding required for business users.</p>
+          </div>
+          <div class="saas-card-body">
+            <ul class="saas-features">
+              <li>Drag-and-drop dashboard builder</li>
+              <li>AI-generated data narratives and summaries</li>
+              <li>Connect to 200+ data sources natively</li>
+              <li>Scheduled reports and smart alerts</li>
+              <li>GDPR, HIPAA, and DPDP compliant</li>
+            </ul>
+            <div class="saas-pricing">
+              <span class="price price-purple">₹19,900</span>
+              <span class="period">/ user / year</span>
+            </div>
+          </div>
+          <div class="saas-card-footer">
+            <a href="#contact" class="btn-card">Start Free Trial</a>
+            <span class="trial-note">30-day free trial</span>
+          </div>
+        </div>
+
+        <!-- CXHub -->
+        <div class="saas-card fade-in">
+          <div class="saas-card-header">
+            <div class="saas-badge badge-green">🤝 CX Suite</div>
+            <h3>Syoda CXHub</h3>
+            <p>AI-first customer experience platform combining omnichannel support, automated resolution, CSAT analytics, and customer journey mapping for modern enterprises.</p>
+          </div>
+          <div class="saas-card-body">
+            <ul class="saas-features">
+              <li>Unified inbox: email, chat, WhatsApp, voice</li>
+              <li>AI triage and auto-response engine</li>
+              <li>Customer sentiment and effort scoring</li>
+              <li>Live agent assist and knowledge base AI</li>
+              <li>99.99% uptime SLA guaranteed</li>
+            </ul>
+            <div class="saas-pricing">
+              <span class="price price-green">₹11,500</span>
+              <span class="period">/ agent / year</span>
+            </div>
+          </div>
+          <div class="saas-card-footer">
+            <a href="#contact" class="btn-card">Start Free Trial</a>
+            <span class="trial-note">30-day free trial</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUTOMATION SECTION ===== -->
+  <section id="automation" class="section-tinted">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">Automation Tools</div>
+        <h2>Intelligent <span class="gradient-text">Automation</span> Platform</h2>
+        <p>Deploy automation that learns, adapts, and scales — eliminating inefficiency across every layer of your enterprise.</p>
+      </div>
+      <div class="automation-grid">
+        <div class="automation-list fade-in">
+          <div class="auto-item">
+            <div class="auto-num">01</div>
+            <div>
+              <h4>FlowBot RPA Engine</h4>
+              <p>Enterprise robotic process automation with drag-and-drop bot builder, AI-enhanced data extraction, and cross-application workflow orchestration. Deploy bots in under 2 hours.</p>
+            </div>
+          </div>
+          <div class="auto-item">
+            <div class="auto-num">02</div>
+            <div>
+              <h4>DocuSense IDP</h4>
+              <p>Intelligent Document Processing for invoices, contracts, forms, and unstructured documents. Achieves 99.4% extraction accuracy using multimodal AI models.</p>
+            </div>
+          </div>
+          <div class="auto-item">
+            <div class="auto-num">03</div>
+            <div>
+              <h4>IntegrationHub</h4>
+              <p>No-code integration platform with 400+ pre-built connectors for ERP, CRM, HRMS, and legacy systems. Build enterprise-grade integrations 10x faster.</p>
+            </div>
+          </div>
+          <div class="auto-item">
+            <div class="auto-num">04</div>
+            <div>
+              <h4>WorkflowAI Orchestrator</h4>
+              <p>Orchestrate complex multi-system workflows with conditional logic, parallel processing, SLA tracking, and human-in-the-loop escalation management.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="automation-metrics fade-in">
+          <div class="auto-metric">
+            <div class="metric-val">85%</div>
+            <div class="metric-label">Reduction in Manual Tasks</div>
+          </div>
+          <div class="auto-metric">
+            <div class="metric-val">10x</div>
+            <div class="metric-label">Faster Process Execution</div>
+          </div>
+          <div class="auto-metric">
+            <div class="metric-val">Zero</div>
+            <div class="metric-label">Coding Required for RPA</div>
+          </div>
+          <div class="auto-metric">
+            <div class="metric-val">2 hrs</div>
+            <div class="metric-label">Average Bot Deployment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content fade-in">
+          <div class="section-tag" style="display:inline-block; margin-bottom:20px;">About Us</div>
+          <h2>Technology with <span class="gradient-text">Purpose</span></h2>
+          <p>Syoda Technology Pvt. Ltd. is a wholly-owned technology subsidiary of Syoda Group, incorporated in India and operating across Asia-Pacific, the Middle East, and Europe. Founded with the mission to democratize enterprise AI and automation, we combine deep domain expertise with frontier technology research.</p>
+          <p>Our team of 1,200+ engineers, data scientists, and technology consultants partner with Fortune 500 companies, government agencies, and high-growth startups to build the intelligent systems that define the future of industry.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <h5>🎯 Innovation First</h5>
+              <p>We invest 18% of revenue in R&amp;D, ensuring our clients always have access to frontier technology.</p>
+            </div>
+            <div class="value-item">
+              <h5>🔒 Security by Design</h5>
+              <p>Every product is architected with enterprise security, privacy, and compliance as foundational requirements.</p>
+            </div>
+            <div class="value-item">
+              <h5>🌱 Responsible AI</h5>
+              <p>We build explainable, auditable, and ethical AI systems that organizations can trust and govern.</p>
+            </div>
+            <div class="value-item">
+              <h5>🤝 Client Success</h5>
+              <p>Dedicated success teams with guaranteed SLAs and 24/7 enterprise support across all time zones.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-team fade-in">
+          <div class="team-card">
+            <div class="team-avatar">👨‍💼</div>
+            <h4>Himanshu Singh</h4>
+            <span>Chief Executive Officer</span>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">👩‍💻</div>
+            <h4>Dr. Priya Nair</h4>
+            <span>Chief Technology Officer</span>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">👨‍🔬</div>
+            <h4>Harry Brooke</h4>
+            <span>Chief AI Officer</span>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">👩‍💼</div>
+            <h4>Douniya Khyati</h4>
+            <span>Chief Product Officer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2>Ready to Transform Your<br><span class="gradient-text">Business with AI?</span></h2>
+        <p>Join 500+ enterprises across 40 countries who trust Syoda Technology to power their digital future.</p>
+        <div class="cta-btns">
+          <a href="mailto:enterprise@syodatech.com" class="btn-primary">Talk to an Expert</a>
+          <a href="#saas" class="btn-secondary">View Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo">
+              <div img src="images/syod-logo.jpg"></div>
+            <div class="logo-text">
+              <span class="logo-name">Syoda Technology Pvt. Ltd.</span>
+              <p><i>A subsidiary of </i><strong>Syoda Group</strong></p>
+            </div>
+          </a>
+          <p>Leading enterprise AI, SaaS, and automation solutions provider. Transforming industries through intelligent technology since 2015.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+
+        <!-- Solutions -->
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#ai">AI &amp; Machine Learning</a></li>
+            <li><a href="#saas">SaaS Products</a></li>
+            <li><a href="#automation">Process Automation</a></li>
+            <li><a href="#services">Cloud Services</a></li>
+            <li><a href="#services">Cybersecurity</a></li>
+            <li><a href="#services">Data Analytics</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press &amp; Media</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">CSR &amp; Sustainability</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Holland Park,<br>Avenue, W11 4UE<br>London, UK</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <span>+44 20 7123 4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <span>info@syoda.in</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>© 2025 Syoda Technology Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#" onclick="openModal('terms'); return false;">Terms &amp; Conditions</a>
+          <a href="#" onclick="openModal('privacy'); return false;">Privacy Policy</a>
+          <a href="#" onclick="openModal('data'); return false;">Data Protection</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL: TERMS & CONDITIONS ===== -->
+  <div class="modal-overlay" id="modal-terms">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('terms')" aria-label="Close">✕</button>
+      <h2>Terms &amp; Conditions</h2>
+      <p class="modal-date">Last Updated: 1 January 2025 &nbsp;|&nbsp; Effective: 1 January 2025</p>
+      <h3>1. Acceptance of Terms</h3>
+      <p>By accessing or using any services, platforms, or products provided by Syoda Technology Pvt. Ltd. ("Syoda Technology", "we", "us", or "our"), a subsidiary of Syoda Group, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, you must discontinue use immediately.</p>
+      <h3>2. Services Description</h3>
+      <p>Syoda Technology provides enterprise AI solutions, SaaS software products, intelligent automation tools, cloud infrastructure services, and professional technology consulting services to corporate clients globally. All services are delivered subject to separate Master Service Agreements and Statement of Work documents.</p>
+      <h3>3. Intellectual Property</h3>
+      <p>All intellectual property, including but not limited to software, algorithms, AI models, trademarks, and proprietary methodologies, remains the exclusive property of Syoda Technology Pvt. Ltd. and/or Syoda Group. Clients are granted a limited, non-exclusive, non-transferable license to use deliverables solely for their internal business purposes.</p>
+      <h3>4. Limitation of Liability</h3>
+      <p>To the fullest extent permitted by applicable law, Syoda Technology shall not be liable for any indirect, incidental, consequential, or punitive damages. Our total aggregate liability shall not exceed the fees paid by you in the three (3) months preceding the claim.</p>
+      <h3>5. Governing Law</h3>
+      <p>These Terms are governed by the laws of India. All disputes shall be subject to the exclusive jurisdiction of the courts of Mumbai, Maharashtra, India.</p>
+      <h3>6. Modifications</h3>
+      <p>Syoda Technology reserves the right to modify these Terms at any time. Continued use of our services following notification of changes constitutes acceptance of the revised Terms.</p>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: PRIVACY POLICY ===== -->
+  <div class="modal-overlay" id="modal-privacy">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('privacy')" aria-label="Close">✕</button>
+      <h2>Privacy Policy</h2>
+      <p class="modal-date">Last Updated: 1 January 2025 &nbsp;|&nbsp; Compliant with DPDP Act 2023, GDPR &amp; Indian law</p>
+      <h3>1. Information We Collect</h3>
+      <p>Syoda Technology collects personal and business data including contact information, usage data, technical metadata, and any data you provide through our products and services. We collect data through direct interactions, automated technologies, and third-party partners.</p>
+      <h3>2. How We Use Your Information</h3>
+      <ul>
+        <li>To deliver, operate, and improve our technology services and SaaS platforms</li>
+        <li>To authenticate users and ensure platform security</li>
+        <li>To provide customer support and account management</li>
+        <li>To send service updates, security advisories, and product communications</li>
+        <li>To train and improve AI models (only with explicit consent or anonymized data)</li>
+        <li>To comply with legal obligations and regulatory requirements</li>
+      </ul>
+      <h3>3. Data Sharing</h3>
+      <p>We do not sell your personal data. We may share data with authorized sub-processors, Syoda Group entities, and technology partners solely to deliver contracted services.</p>
+      <h3>4. Your Rights</h3>
+      <p>Under India's DPDP Act and GDPR, you have the right to access, correct, delete, and port your personal data. Submit requests to: privacy@syodatech.com.</p>
+      <h3>5. Data Retention</h3>
+      <p>Personal data is retained for the duration of your service relationship and for a maximum of 7 years post-termination, unless longer retention is required by law.</p>
+      <h3>6. Contact</h3>
+      <p>Data Protection Officer: dpo@syoda.in</p>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: DATA PROTECTION ===== -->
+  <div class="modal-overlay" id="modal-data">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('data')" aria-label="Close">✕</button>
+      <h2>Data Protection Policy</h2>
+      <p class="modal-date">Last Updated: 1 January 2025 &nbsp;|&nbsp; ISO 27001 | SOC 2 Type II | DPDP 2023 | GDPR</p>
+      <h3>1. Our Commitment</h3>
+      <p>Syoda Technology Pvt. Ltd. is committed to protecting the security, integrity, and confidentiality of all data entrusted to us by our clients, partners, and users. We implement industry-leading security controls across all our systems and processes.</p>
+      <h3>2. Security Architecture</h3>
+      <ul>
+        <li>AES-256 encryption for all data at rest; TLS 1.3 for data in transit</li>
+        <li>Zero-trust network architecture with multi-factor authentication</li>
+        <li>24/7 Security Operations Centre (SOC) with AI-driven threat detection</li>
+        <li>Regular third-party penetration testing and vulnerability assessments</li>
+        <li>Immutable audit logs and tamper-proof access records</li>
+      </ul>
+      <h3>3. Data Localisation</h3>
+      <p>In compliance with India's DPDP Act 2023, critical personal data of Indian residents is stored within Indian data centres by default. Cross-border transfers are executed under Standard Contractual Clauses.</p>
+      <h3>4. Breach Notification</h3>
+      <p>In the event of a confirmed data breach, Syoda Technology will notify affected clients and relevant authorities within 72 hours, as required under GDPR and applicable Indian law.</p>
+      <h3>5. Certifications</h3>
+      <p>ISO/IEC 27001:2022, SOC 2 Type II, PCI-DSS Level 1, and HIPAA-eligible. Certification documents available to enterprise clients under NDA.</p>
+      <h3>6. Data Protection Officer</h3>
+      <p>DPO Contact: dpo@syoda.in &nbsp;|&nbsp; Security Disclosures: security@syoda.in</p>
+    </div>
+  </div>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="script.js"></script>
+
+</body>
+</html>
